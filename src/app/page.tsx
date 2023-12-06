@@ -1,94 +1,94 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Iconify from "@/components/icon/Iconify";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="main-page">
+      <div className="poster">
+
+        <div className="right">
+          <Image
+            src={"/images/main-page/2.png"}
+            width={550}
+            height={1000}
+            alt="" />
         </div>
-      </div>
+        <div className="left">
+          <Image
+            src={"/images/main-page/3.png"}
+            width={250}
+            height={150}
+            alt="" />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <div className="text">
+            <h1>
+              با ممبرلند خرید کن و < br />
+              فضای مجازی رو انفجار کن
+            </h1>
+            <p>
+              اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) متنی ساختگی و بدون معنی است.
+            </p>
+          </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          <form className="login">
+            <div className="group">
+              <Iconify icon="ri:user-line" />
+              <input type="text" placeholder="نام کاربری" />
+            </div>
+            <div className="group">
+              <Iconify icon="mdi:password" />
+              <input type="text" placeholder="پسوورد" />
+            </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            <div className="buttons">
+              <button>
+                <Iconify icon="basil:login-solid" />
+                <span>ورود</span>
+              </button>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+              <button>
+                <Iconify icon="mdi:register" />
+                <span>ثبت نام</span>
+              </button>
+            </div>
+          </form>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        </div>
+
+
+        <div className="shapes">
+          <div className="shape-1">
+            <Image
+              src={"/images/main-page/5.png"}
+              alt=""
+              fill
+            />
+          </div>
+          <div className="shape-2">
+            <Image
+              src={"/images/main-page/6.png"}
+              fill
+              alt="" />
+          </div>
+
+     
+
+          <div className="shape-4">
+            <Image
+              src={"/images/main-page/8.png"}
+              fill
+              alt="" />
+          </div>
+
+          <div className="shape-5">
+            <Image
+              src={"/images/main-page/9.png"}
+              fill
+              alt="" />
+          </div>
+        </div>
+
+
       </div>
     </main>
   )
