@@ -4,7 +4,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="main-page">
-      <div className="poster">
+
+      <section className="poster">
 
         <div className="right">
           <Image
@@ -55,7 +56,6 @@ export default function Home() {
 
         </div>
 
-
         <div className="shapes">
           <div className="shape-1">
             <Image
@@ -71,7 +71,7 @@ export default function Home() {
               alt="" />
           </div>
 
-     
+
 
           <div className="shape-4">
             <Image
@@ -89,7 +89,119 @@ export default function Home() {
         </div>
 
 
-      </div>
+      </section>
+
+      <section className="why-us">
+
+
+
+
+        <div className="right">
+
+
+          <div className="items">
+            <div className="item">
+              <div className="image">
+                <Image
+                  src={"/images/main-page/12.svg"}
+                  fill
+                  alt=""
+                />
+              </div>
+              <div className="info">
+                <h2>
+                  خرید آسان و مطعمن
+                </h2>
+                <p>
+                  اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.
+                </p>
+              </div>
+            </div>
+
+            <div className="item">
+              <div className="image">
+                <Image
+                  src={"/images/main-page/13.svg"}
+                  fill
+                  alt=""
+                />
+              </div>
+              <div className="info">
+                <h2>
+                  سریع و آماده تحویل !
+                </h2>
+                <p>
+                  اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.
+                </p>
+              </div>
+            </div>
+
+
+            <div className="item">
+              <div className="image">
+                <Image
+                  src={"/images/main-page/14.svg"}
+                  fill
+                  alt=""
+                />
+              </div>
+              <div className="info">
+                <h2>
+                  پشتیبانی 24 ساعته
+                </h2>
+                <p>
+                  اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.
+                </p>
+              </div>
+            </div>
+
+
+            <div className="item">
+              <div className="image">
+                <Image
+                  src={"/images/main-page/15.svg"}
+                  fill
+                  alt=""
+                />
+              </div>
+              <div className="info">
+                <h2>
+                  خرید آسان و مطعمن
+                </h2>
+                <p>
+                  اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div className="left">
+          <div className="avatar">
+            <Image
+              src={"/images/main-page/10.png"}
+              fill
+              alt=""
+            />
+          </div>
+        </div>
+
+      </section>
+
+
+      <section className="platforms">
+        <h1>کدوم پلتفرما هارو نیاز داری ؟</h1>
+        <div className="list">
+          <div className="item">
+            <Image
+              src="/images/main-page/16.png"
+              alt=""
+              fill />
+          </div>
+        </div>
+      </section>
+
     </main>
   )
 }
