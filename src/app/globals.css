@@ -33,6 +33,12 @@ main {
   display: flex;
   flex-direction: column;
   color: white;
+  padding-bottom: 2em;
+}
+
+.shapes {
+  position: absolute;
+  inset: 0;
 }
 
 button {
@@ -50,6 +56,11 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .shapes {
@@ -176,10 +187,11 @@ h2 {
 .main-page .why-us {
   display: grid;
   grid-template-columns: 1fr max-content;
-  align-items: start;
+  align-items: center;
   margin-top: 5rem;
   position: relative;
-  min-height: 100dvh;
+  height: -moz-max-content;
+  height: max-content;
 }
 .main-page .why-us .left {
   width: 676px;
@@ -225,12 +237,266 @@ h2 {
 .main-page .why-us .right .items .item:nth-child(4) {
   margin-right: 12rem;
 }
-.main-page .platforms .list {
-  display: flex;
+.main-page .why-us .shapes .shape-1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: -150px;
+  top: 100px;
 }
-.main-page .platforms .list .item {
-  width: 10rem;
-  height: 10rem;
+.main-page .platforms {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/images/main-page/22.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5em;
+  position: relative;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.main-page .platforms .header {
+  display: flex;
+  flex-direction: column;
+}
+.main-page .platforms .header .list {
+  display: flex;
+  justify-content: start;
+  margin-top: 0.5rem;
+}
+.main-page .platforms .header .list .item {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+}
+.main-page .platforms .header p {
+  color: rgba(255, 255, 255, 0.74);
+  text-align: right;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 60ch;
+}
+.main-page .platforms .body {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.main-page .platforms .body .item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 17rem;
+  border-radius: 21px;
+  padding: 2em;
+  background: linear-gradient(180deg, #fb9534 0%, #a541ff 100%, #a541ff 100%);
+}
+.main-page .platforms .body .item .item-header {
+  position: relative;
+  width: 150px;
+  aspect-ratio: 1/1;
+}
+.main-page .platforms .body .item .item-header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main-page .platforms .body .item .item-body {
+  text-align: center;
+}
+.main-page .platforms .body .item .item-body p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.main-page .platforms .body .item .item-body button {
+  background-color: white;
+  border-radius: 100rem;
+  color: #9c1fff;
+  padding: 0.5em 1em;
+  margin-top: 1rem;
+}
+.main-page .platforms .shapes .shape-1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 0;
+  bottom: 0;
+}
+.main-page .platforms .shapes .shape-2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 0;
+  top: 20%;
+}
+.main-page .top-services {
+  min-height: 100dvh;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+.main-page .top-services .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-page .top-services .header .left {
+  max-width: 70ch;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main-page .top-services .header .left p {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  max-width: 40ch;
+  line-height: 1.75;
+}
+.main-page .top-services .header .left span {
+  background-color: white;
+  color: #9c1fff;
+  margin: 1rem;
+  padding: 0 0.5em;
+  border-radius: 0.5rem;
+  padding-block-end: 0.5rem;
+}
+.main-page .top-services .header .right .image {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+}
+.main-page .top-services .body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  max-width: 1200px;
+  gap: 2rem;
+  z-index: 1;
+}
+.main-page .top-services .body .item {
+  background-color: white;
+  padding: 2em;
+  position: relative;
+  border-radius: 1rem;
+}
+.main-page .top-services .body .item .image {
+  position: absolute;
+  top: -4em;
+  width: 8rem;
+  height: 8rem;
+}
+.main-page .top-services .body .item h3 {
+  background: linear-gradient(180deg, #d602fc 0%, #3c6ff7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.main-page .top-services .body .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.main-page .top-services .body .item ul li {
+  color: rgba(0, 15, 94, 0.54);
+  text-align: right;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: disc;
+  margin-right: 1rem;
+}
+.main-page .top-services .body .item .price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.main-page .top-services .body .item .price span {
+  background: linear-gradient(180deg, #d602fc 0%, #3c6ff7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 0 !important;
+  padding-block: 0 !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.main-page .top-services .body .item .price svg {
+  background-color: #f9435d;
+  color: white;
+  font-size: 3rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.main-page .top-services .shapes {
+  position: absolute;
+}
+.main-page .top-services .shapes .shape-1 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.main-page .top-services .shapes .shape-2 {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+}
+.main-page .top-services .shapes .shape-3 {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  right: -200px;
+  top: 100px;
+}
+.main-page .videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+.main-page .videos .left h1 {
+  max-width: 18ch;
+}
+.main-page .videos .left p {
+  max-width: 50ch;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  opacity: 0.7;
+  line-height: 2;
+}
+.main-page .videos .left button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.25em 1em;
+  background-color: white;
+  border-radius: 100rem;
+  color: #9c1fff;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+.main-page .videos .right {
+  position: relative;
+  width: 500px;
+  height: 500px;
 }
 
 header {
