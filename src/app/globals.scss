@@ -10,6 +10,15 @@ $headers-size-h3: 1.5rem;
     src: url("/fonts/BYEKAN+.TTF");
 }
 
+@font-face {
+    font-family: B-Yekan-Numbers;
+    src: url("/fonts/iran-sans.ttf");
+}
+
+.number {
+    font-family: B-Yekan-Numbers;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -77,6 +86,11 @@ h3 {
 }
 
 section {
+}
+
+.swiper {
+    max-width: 100% !important;
+
 }
 
 .main-page {
@@ -499,7 +513,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100dvh;
+        min-height: max-content;
 
         .left {
             h1 {
@@ -529,6 +543,130 @@ section {
             position: relative;
             width: 500px;
             height: 500px;
+        }
+    }
+
+    .customers-reviews {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        align-self: center;
+
+     
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            .header {
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                h1 {
+                    max-width: 20ch;
+                }
+                p {
+                    max-width: 50ch;
+                    font-size: 1.5rem;
+                    margin-top: 0.5rem;
+                    // opacity: 0.7;
+                    line-height: 2;
+                }
+            }
+            .body {
+                display: grid;
+                margin-top: 1rem;
+                gap: 1rem;
+                max-width: 80%;
+                align-self: center;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 1rem;
+                overflow: hidden;
+
+              
+                
+                .initial-child-container {
+                    width: max-content !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-left: 1rem;
+                    
+                }
+                .item {
+                    background-color: white;
+                    border-radius: 1rem;
+                    padding: 1em;
+                    color: black;
+                    width: 18rem;
+                    .item-header {
+                        display: flex;
+                        align-items: center;
+                        h3 {
+                            font-size: 1.25rem;
+                            font-weight: bold;
+                        }
+                        .date {
+                            font-size: 0.9rem;
+                            opacity: 0.6;
+                        }
+                        .stars {
+                            color: orange;
+                        }
+                    }
+                    .item-body {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0.5em;
+                        h3 {
+                            font-weight: bold;
+                        }
+                        p {
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            opacity: 0.7;
+                            margin-top: 0.5rem;
+                        }
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.25rem;
+                            margin-top: 0.5rem;
+
+                            li {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                span {
+                                    font-weight: bold;
+                                }
+                                svg {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                    .image {
+                        position: relative;
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        .right {
+            position: absolute;
+            .image {
+                width: 800px;
+                height: 800px;
+                position: relative;
+                opacity: 0.5;
+             filter: blur(5px);
+            }
         }
     }
 }

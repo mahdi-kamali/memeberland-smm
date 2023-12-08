@@ -1,5 +1,11 @@
+
 import Iconify from "@/components/icon/Iconify";
 import Image from "next/image";
+import CustomersReviews from "./sections/customers-reviews/CustomersReviews";
+
+
+
+
 
 export default function Home() {
   return (
@@ -559,6 +565,8 @@ export default function Home() {
 
       </section>
 
+      <CustomersReviews/>
+
 
       <section className="videos">
 
@@ -591,6 +599,9 @@ export default function Home() {
         </div>
 
       </section>
+
+
+  
 
     </main>
   )

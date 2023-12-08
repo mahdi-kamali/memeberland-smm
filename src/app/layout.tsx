@@ -4,6 +4,21 @@ import './globals.css'
 import Header from '@/components/primaries/header/Header'
 import Footer from '@/components/primaries/footer/Footer'
 
+
+
+
+
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

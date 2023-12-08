@@ -2,6 +2,14 @@
   font-family: B-Yekan;
   src: url("/fonts/BYEKAN+.TTF");
 }
+@font-face {
+  font-family: B-Yekan-Numbers;
+  src: url("/fonts/iran-sans.ttf");
+}
+.number {
+  font-family: B-Yekan-Numbers;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -65,6 +73,10 @@ h3 {
 
 .shapes {
   pointer-events: none;
+}
+
+.swiper {
+  max-width: 100% !important;
 }
 
 .main-page {
@@ -469,7 +481,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100dvh;
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 .main-page .videos .left h1 {
   max-width: 18ch;
@@ -497,6 +510,121 @@ h3 {
   position: relative;
   width: 500px;
   height: 500px;
+}
+.main-page .customers-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  align-self: center;
+}
+.main-page .customers-reviews .left {
+  display: flex;
+  flex-direction: column;
+}
+.main-page .customers-reviews .left .header {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-page .customers-reviews .left .header h1 {
+  max-width: 20ch;
+}
+.main-page .customers-reviews .left .header p {
+  max-width: 50ch;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  line-height: 2;
+}
+.main-page .customers-reviews .left .body {
+  display: grid;
+  margin-top: 1rem;
+  gap: 1rem;
+  max-width: 80%;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.main-page .customers-reviews .left .body .initial-child-container {
+  width: -moz-max-content !important;
+  width: max-content !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.main-page .customers-reviews .left .body .item {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1em;
+  color: black;
+  width: 18rem;
+}
+.main-page .customers-reviews .left .body .item .item-header {
+  display: flex;
+  align-items: center;
+}
+.main-page .customers-reviews .left .body .item .item-header h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.main-page .customers-reviews .left .body .item .item-header .date {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+.main-page .customers-reviews .left .body .item .item-header .stars {
+  color: orange;
+}
+.main-page .customers-reviews .left .body .item .item-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+.main-page .customers-reviews .left .body .item .item-body h3 {
+  font-weight: bold;
+}
+.main-page .customers-reviews .left .body .item .item-body p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+.main-page .customers-reviews .left .body .item .item-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+.main-page .customers-reviews .left .body .item .item-body ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-page .customers-reviews .left .body .item .item-body ul li span {
+  font-weight: bold;
+}
+.main-page .customers-reviews .left .body .item .item-body ul li svg {
+  font-size: 1.2rem;
+}
+.main-page .customers-reviews .left .body .item .image {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.main-page .customers-reviews .right {
+  position: absolute;
+}
+.main-page .customers-reviews .right .image {
+  width: 800px;
+  height: 800px;
+  position: relative;
+  opacity: 0.5;
+  filter: blur(5px);
 }
 
 header {
