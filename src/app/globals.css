@@ -477,40 +477,6 @@ h3 {
   right: -200px;
   top: 100px;
 }
-.main-page .videos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: -moz-max-content;
-  min-height: max-content;
-}
-.main-page .videos .left h1 {
-  max-width: 18ch;
-}
-.main-page .videos .left p {
-  max-width: 50ch;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-  opacity: 0.7;
-  line-height: 2;
-}
-.main-page .videos .left button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
-  padding: 0.25em 1em;
-  background-color: white;
-  border-radius: 100rem;
-  color: #9c1fff;
-  margin-top: 1.5rem;
-  font-size: 1.3rem;
-}
-.main-page .videos .right {
-  position: relative;
-  width: 500px;
-  height: 500px;
-}
 .main-page .customers-reviews {
   display: flex;
   align-items: center;
@@ -625,6 +591,144 @@ h3 {
   position: relative;
   opacity: 0.5;
   filter: blur(5px);
+}
+.main-page .videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  margin-top: 2rem;
+}
+.main-page .videos .left h1 {
+  max-width: 18ch;
+}
+.main-page .videos .left p {
+  max-width: 50ch;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  opacity: 0.7;
+  line-height: 2;
+}
+.main-page .videos .left button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.25em 1em;
+  background-color: white;
+  border-radius: 100rem;
+  color: #9c1fff;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+.main-page .videos .right {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.main-page .gifts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin-top: 2rem;
+}
+.main-page .gifts h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.main-page .gifts p {
+  font-size: 1.2rem;
+}
+.main-page .blogs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  position: relative;
+}
+.main-page .blogs .header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.main-page .blogs .header p {
+  font-size: 1.5rem;
+  max-width: 45ch;
+  opacity: 0.7;
+  margin-top: 1rem;
+  line-height: 1.75;
+}
+.main-page .blogs .body {
+  padding: 0 2em;
+  margin-top: 2rem;
+}
+.main-page .blogs .body .item {
+  color: black;
+}
+.main-page .blogs .body .item .item-header .image {
+  width: 100%;
+  position: relative;
+  background-color: red;
+  aspect-ratio: 16/11;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.main-page .blogs .body .item .item-header .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-page .blogs .body .item .item-body {
+  background-color: white;
+  border-radius: 2rem;
+  position: relative;
+  top: -5rem;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main-page .blogs .body .item .item-body h3 {
+  font-weight: bold;
+}
+.main-page .blogs .body .item .item-body p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+.main-page .blogs .body .item .item-body .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.main-page .blogs .body .item .item-body .buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 0.25rem;
+  font-size: 1.3rem;
+  color: #ffb700;
+  border: 2px solid #ffb700;
+  border-radius: 100rem;
+  padding: 0.25em;
+  width: 50%;
+}
+.main-page .blogs .body .item .item-body .buttons button:first-child {
+  background-color: #ffb700;
+  color: white;
+}
+.main-page .blogs .body .shape-1 {
+  width: 100%;
 }
 
 header {

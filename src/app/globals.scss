@@ -90,7 +90,6 @@ section {
 
 .swiper {
     max-width: 100% !important;
-
 }
 
 .main-page {
@@ -509,51 +508,12 @@ section {
         }
     }
 
-    .videos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: max-content;
-
-        .left {
-            h1 {
-                max-width: 18ch;
-            }
-            p {
-                max-width: 50ch;
-                font-size: 1.5rem;
-                margin-top: 0.5rem;
-                opacity: 0.7;
-                line-height: 2;
-            }
-            button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 0.25rem;
-                padding: 0.25em 1em;
-                background-color: white;
-                border-radius: 100rem;
-                color: $color-2;
-                margin-top: 1.5rem;
-                font-size: 1.3rem;
-            }
-        }
-        .right {
-            position: relative;
-            width: 500px;
-            height: 500px;
-        }
-    }
-
     .customers-reviews {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
         align-self: center;
-
-     
 
         .left {
             display: flex;
@@ -586,8 +546,6 @@ section {
                 border-radius: 1rem;
                 overflow: hidden;
 
-              
-                
                 .initial-child-container {
                     width: max-content !important;
                     display: flex;
@@ -595,7 +553,6 @@ section {
                     justify-content: center;
                     gap: 1rem;
                     margin-left: 1rem;
-                    
                 }
                 .item {
                     background-color: white;
@@ -665,7 +622,154 @@ section {
                 height: 800px;
                 position: relative;
                 opacity: 0.5;
-             filter: blur(5px);
+                filter: blur(5px);
+            }
+        }
+    }
+
+    .videos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: max-content;
+        margin-top: 2rem;
+        .left {
+            h1 {
+                max-width: 18ch;
+            }
+            p {
+                max-width: 50ch;
+                font-size: 1.5rem;
+                margin-top: 0.5rem;
+                opacity: 0.7;
+                line-height: 2;
+            }
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.25rem;
+                padding: 0.25em 1em;
+                background-color: white;
+                border-radius: 100rem;
+                color: $color-2;
+                margin-top: 1.5rem;
+                font-size: 1.3rem;
+            }
+        }
+        .right {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    .gifts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 1em;
+        margin-top: 2rem;
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        position: relative;
+
+        .header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            p {
+                font-size: 1.5rem;
+                max-width: 45ch;
+                opacity: 0.7;
+                margin-top: 1rem;
+                line-height: 1.75;
+            }
+        }
+        .body {
+            padding: 0 2em;
+            margin-top: 2rem;
+            .item {
+                color: black;
+                .item-header {
+                    .image {
+                        width: 100%;
+                        position: relative;
+                        background-color: red;
+                        aspect-ratio: 16/11;
+                        border-radius: 2rem;
+                        overflow: hidden;
+                        img {
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .item-body {
+                    background-color: white;
+                    border-radius: 2rem;
+                    position: relative;
+                    top: -5rem;
+                    width: 85%;
+                    margin: 0 auto;
+                    padding: 2em;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    h3 {
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 0.9rem;
+                        opacity: 0.8;
+                        line-height: 1.5;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1rem;
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: row-reverse;
+                            gap: 0.25rem;
+                            font-size: 1.3rem;
+                            color: #ffb700;
+                            border: 2px solid #ffb700;
+                            border-radius: 100rem;
+                            padding: 0.25em;
+                            width: 50%;
+                            &:first-child {
+                                background-color: #ffb700;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .shape-1 {
+                width: 100%;
             }
         }
     }

@@ -6,6 +6,10 @@ import CustomersReviews from "./sections/customers-reviews/CustomersReviews";
 
 
 
+import Blogs from "./sections/blogs/Blogs";
+
+
+
 
 export default function Home() {
   return (
@@ -565,7 +569,7 @@ export default function Home() {
 
       </section>
 
-      <CustomersReviews/>
+      <CustomersReviews />
 
 
       <section className="videos">
@@ -601,7 +605,24 @@ export default function Home() {
       </section>
 
 
-  
+
+      <section className="gifts">
+        <h1>
+          <Iconify icon="fluent:star-12-filled" />
+          جایزه ویژه اولین ثبت نامی ها</h1>
+        <p>
+          به عنوان تشویقی برای شروع همکاری با ما، امروز شروع کنید و %20 تخفیف را برای اولین خرید خود از ما به دست آورید. فرصت را از دست ندهید!
+        </p>
+      </section>
+
+
+
+      <Blogs />
+
+
+
+
+
 
     </main>
   )
