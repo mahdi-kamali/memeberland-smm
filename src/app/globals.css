@@ -32,16 +32,19 @@ body {
   margin: 0 auto;
   max-width: 1920px;
   direction: rtl;
+  background-image: url("/images/main-page/1.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: B-Yekan !important;
 }
 
 main {
   min-height: 100dvh;
   min-width: 100%;
-  font-family: B-Yekan;
   display: flex;
   flex-direction: column;
   color: white;
-  padding-bottom: 2em;
 }
 
 .shapes {
@@ -79,12 +82,6 @@ h3 {
   max-width: 100% !important;
 }
 
-.main-page {
-  background-image: url("/images/main-page/1.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .main-page .poster {
   display: flex;
   justify-content: center;
@@ -650,6 +647,7 @@ h3 {
   flex-direction: column;
   margin-top: 2rem;
   position: relative;
+  background-repeat: no-repeat;
 }
 .main-page .blogs .header {
   display: flex;
@@ -765,4 +763,87 @@ header ul a {
 }
 header ul a svg {
   font-size: 1.25rem;
+}
+
+footer {
+  position: relative;
+  padding: 3em;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5rem 5rem 0 0;
+  color: white;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+footer .header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+footer .header .right {
+  position: relative;
+  width: 350px;
+  height: 200px;
+}
+footer .header .left {
+  font-weight: bold;
+  max-width: 25ch;
+  font-size: 1.75rem;
+}
+footer .social-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+footer .social-links .item {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+}
+footer .social-links .item svg {
+  font-size: 1.5rem;
+}
+footer .lists {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+footer .lists ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .lists ul h1 {
+  font-size: 1.5rem;
+  background-color: white;
+  color: #9c1fff;
+  text-align: center;
+  border-radius: 100rem;
+  padding: 0.25em 2em;
+  margin-bottom: 1rem;
+}
+footer .lists ul li {
+  list-style: disc;
+  margin-right: 1.25rem;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+footer .rocket {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0.5;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+footer .rocket img {
+  left: 0;
 }/*# sourceMappingURL=globals.css.map */
