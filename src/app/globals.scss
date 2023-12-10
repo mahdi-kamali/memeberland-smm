@@ -290,9 +290,10 @@ h3 {
                 display: flex;
                 justify-content: start;
                 margin-top: 0.5rem;
+                gap: 1rem;
                 .item {
-                    width: 8rem;
-                    height: 8rem;
+                    width: 6.5rem;
+                    height: 6.5rem;
                     position: relative;
                 }
             }
@@ -799,6 +800,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: row-reverse;
             gap: 0.5rem;
             font-size: 20px;
             font-style: normal;

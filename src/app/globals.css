@@ -273,10 +273,11 @@ h3 {
   display: flex;
   justify-content: start;
   margin-top: 0.5rem;
+  gap: 1rem;
 }
 .main-page .platforms .header .list .item {
-  width: 8rem;
-  height: 8rem;
+  width: 6.5rem;
+  height: 6.5rem;
   position: relative;
 }
 .main-page .platforms .header p {
@@ -754,6 +755,7 @@ header ul a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
   gap: 0.5rem;
   font-size: 20px;
   font-style: normal;

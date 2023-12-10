@@ -5,8 +5,6 @@ import React from 'react'
 export default function Footer() {
     return (
         <footer>
-
-            
             <div className="header">
                 <div className="right">
                     <Image
