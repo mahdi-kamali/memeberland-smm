@@ -22,296 +22,236 @@ export default function TopSales() {
             <div className="body">
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={30}
-                    slidesPerView={5.5}
+                    spaceBetween={0}
+                    slidesPerView={4.25}
                     navigation
                     pagination={{ clickable: true }}
                 >
-                    <SwiperSlide className="item">
-                        <div className="item-header">
-                            <Image
-                                src="/images/services/2.png"
-                                width={125}
-                                height={125}
-                                alt="" />
-                        </div>
-                        <div className="item-body">
-                            <h3>
-                                سرویس فالوور اینستاگرام واقعی
-                            </h3>
-                            <ul>
-                                <li>زمان : 10 دقیقه</li>
-                                <li>
-                                    تعداد 2 هزار
-                                </li>
-                                <li>
-                                    قیمت تمام شده : 350 هزار تومان
-                                </li>
-                                <li>
-                                    تکرار : بله
-                                </li>
-                            </ul>
-                        </div>
+                    <SwiperSlide >
+                        <div className="item">
+                            <div className="item-header">
+                                <Image
+                                    src="/images/services/2.png"
+                                    width={125}
+                                    height={125}
+                                    alt="" />
+                            </div>
+                            <div className="item-body">
+                                <h3>
+                                    سرویس فالوور اینستاگرام واقعی
+                                </h3>
+                                <ul>
+                                    <li>زمان : 10 دقیقه</li>
+                                    <li>
+                                        تعداد 2 هزار
+                                    </li>
+                                    <li>
+                                        قیمت تمام شده : 350 هزار تومان
+                                    </li>
+                                    <li>
+                                        تکرار : بله
+                                    </li>
+                                </ul>
+                            </div>
 
-                        <div className="item-buttons">
-                            <button>
-                                <span className="number">
-                                    320 تومان
-                                </span>
-                                <Iconify icon="ph:bag-fill" />
-                            </button>
-                        </div>
-
-                    </SwiperSlide>
-                    <SwiperSlide className="item">
-                        <div className="item-header">
-                            <Image
-                                src="/images/services/2.png"
-                                width={125}
-                                height={125}
-                                alt="" />
-                        </div>
-                        <div className="item-body">
-                            <h3>
-                                سرویس فالوور اینستاگرام واقعی
-                            </h3>
-                            <ul>
-                                <li>زمان : 10 دقیقه</li>
-                                <li>
-                                    تعداد 2 هزار
-                                </li>
-                                <li>
-                                    قیمت تمام شده : 350 هزار تومان
-                                </li>
-                                <li>
-                                    تکرار : بله
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="item-buttons">
-                            <button>
-                                <span className="number">
-                                    320 تومان
-                                </span>
-                                <Iconify icon="ph:bag-fill" />
-                            </button>
+                            <div className="item-buttons">
+                                <button>
+                                    <span className="number">
+                                        320 تومان
+                                    </span>
+                                    <Iconify icon="ph:bag-fill" />
+                                </button>
+                            </div>
                         </div>
 
                     </SwiperSlide>
-                    <SwiperSlide className="item">
-                        <div className="item-header">
-                            <Image
-                                src="/images/services/2.png"
-                                width={125}
-                                height={125}
-                                alt="" />
-                        </div>
-                        <div className="item-body">
-                            <h3>
-                                سرویس فالوور اینستاگرام واقعی
-                            </h3>
-                            <ul>
-                                <li>زمان : 10 دقیقه</li>
-                                <li>
-                                    تعداد 2 هزار
-                                </li>
-                                <li>
-                                    قیمت تمام شده : 350 هزار تومان
-                                </li>
-                                <li>
-                                    تکرار : بله
-                                </li>
-                            </ul>
-                        </div>
+                    <SwiperSlide >
+                        <div className="item">
+                            <div className="item-header">
+                                <Image
+                                    src="/images/services/2.png"
+                                    width={125}
+                                    height={125}
+                                    alt="" />
+                            </div>
+                            <div className="item-body">
+                                <h3>
+                                    سرویس فالوور اینستاگرام واقعی
+                                </h3>
+                                <ul>
+                                    <li>زمان : 10 دقیقه</li>
+                                    <li>
+                                        تعداد 2 هزار
+                                    </li>
+                                    <li>
+                                        قیمت تمام شده : 350 هزار تومان
+                                    </li>
+                                    <li>
+                                        تکرار : بله
+                                    </li>
+                                </ul>
+                            </div>
 
-                        <div className="item-buttons">
-                            <button>
-                                <span className="number">
-                                    320 تومان
-                                </span>
-                                <Iconify icon="ph:bag-fill" />
-                            </button>
-                        </div>
-
-                    </SwiperSlide>
-                    <SwiperSlide className="item">
-                        <div className="item-header">
-                            <Image
-                                src="/images/services/2.png"
-                                width={125}
-                                height={125}
-                                alt="" />
-                        </div>
-                        <div className="item-body">
-                            <h3>
-                                سرویس فالوور اینستاگرام واقعی
-                            </h3>
-                            <ul>
-                                <li>زمان : 10 دقیقه</li>
-                                <li>
-                                    تعداد 2 هزار
-                                </li>
-                                <li>
-                                    قیمت تمام شده : 350 هزار تومان
-                                </li>
-                                <li>
-                                    تکرار : بله
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="item-buttons">
-                            <button>
-                                <span className="number">
-                                    320 تومان
-                                </span>
-                                <Iconify icon="ph:bag-fill" />
-                            </button>
+                            <div className="item-buttons">
+                                <button>
+                                    <span className="number">
+                                        320 تومان
+                                    </span>
+                                    <Iconify icon="ph:bag-fill" />
+                                </button>
+                            </div>
                         </div>
 
                     </SwiperSlide>
-                    <SwiperSlide className="item">
-                        <div className="item-header">
-                            <Image
-                                src="/images/services/2.png"
-                                width={125}
-                                height={125}
-                                alt="" />
-                        </div>
-                        <div className="item-body">
-                            <h3>
-                                سرویس فالوور اینستاگرام واقعی
-                            </h3>
-                            <ul>
-                                <li>زمان : 10 دقیقه</li>
-                                <li>
-                                    تعداد 2 هزار
-                                </li>
-                                <li>
-                                    قیمت تمام شده : 350 هزار تومان
-                                </li>
-                                <li>
-                                    تکرار : بله
-                                </li>
-                            </ul>
-                        </div>
+                    <SwiperSlide >
+                        <div className="item">
+                            <div className="item-header">
+                                <Image
+                                    src="/images/services/2.png"
+                                    width={125}
+                                    height={125}
+                                    alt="" />
+                            </div>
+                            <div className="item-body">
+                                <h3>
+                                    سرویس فالوور اینستاگرام واقعی
+                                </h3>
+                                <ul>
+                                    <li>زمان : 10 دقیقه</li>
+                                    <li>
+                                        تعداد 2 هزار
+                                    </li>
+                                    <li>
+                                        قیمت تمام شده : 350 هزار تومان
+                                    </li>
+                                    <li>
+                                        تکرار : بله
+                                    </li>
+                                </ul>
+                            </div>
 
-                        <div className="item-buttons">
-                            <button>
-                                <span className="number">
-                                    320 تومان
-                                </span>
-                                <Iconify icon="ph:bag-fill" />
-                            </button>
-                        </div>
-
-                    </SwiperSlide>
-                    <SwiperSlide className="item">
-                        <div className="item-header">
-                            <Image
-                                src="/images/services/2.png"
-                                width={125}
-                                height={125}
-                                alt="" />
-                        </div>
-                        <div className="item-body">
-                            <h3>
-                                سرویس فالوور اینستاگرام واقعی
-                            </h3>
-                            <ul>
-                                <li>زمان : 10 دقیقه</li>
-                                <li>
-                                    تعداد 2 هزار
-                                </li>
-                                <li>
-                                    قیمت تمام شده : 350 هزار تومان
-                                </li>
-                                <li>
-                                    تکرار : بله
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="item-buttons">
-                            <button>
-                                <span className="number">
-                                    320 تومان
-                                </span>
-                                <Iconify icon="ph:bag-fill" />
-                            </button>
+                            <div className="item-buttons">
+                                <button>
+                                    <span className="number">
+                                        320 تومان
+                                    </span>
+                                    <Iconify icon="ph:bag-fill" />
+                                </button>
+                            </div>
                         </div>
 
                     </SwiperSlide>
-                    <SwiperSlide className="item">
-                        <div className="item-header">
-                            <Image
-                                src="/images/services/2.png"
-                                width={125}
-                                height={125}
-                                alt="" />
-                        </div>
-                        <div className="item-body">
-                            <h3>
-                                سرویس فالوور اینستاگرام واقعی
-                            </h3>
-                            <ul>
-                                <li>زمان : 10 دقیقه</li>
-                                <li>
-                                    تعداد 2 هزار
-                                </li>
-                                <li>
-                                    قیمت تمام شده : 350 هزار تومان
-                                </li>
-                                <li>
-                                    تکرار : بله
-                                </li>
-                            </ul>
-                        </div>
+                    <SwiperSlide >
+                        <div className="item">
+                            <div className="item-header">
+                                <Image
+                                    src="/images/services/2.png"
+                                    width={125}
+                                    height={125}
+                                    alt="" />
+                            </div>
+                            <div className="item-body">
+                                <h3>
+                                    سرویس فالوور اینستاگرام واقعی
+                                </h3>
+                                <ul>
+                                    <li>زمان : 10 دقیقه</li>
+                                    <li>
+                                        تعداد 2 هزار
+                                    </li>
+                                    <li>
+                                        قیمت تمام شده : 350 هزار تومان
+                                    </li>
+                                    <li>
+                                        تکرار : بله
+                                    </li>
+                                </ul>
+                            </div>
 
-                        <div className="item-buttons">
-                            <button>
-                                <span className="number">
-                                    320 تومان
-                                </span>
-                                <Iconify icon="ph:bag-fill" />
-                            </button>
+                            <div className="item-buttons">
+                                <button>
+                                    <span className="number">
+                                        320 تومان
+                                    </span>
+                                    <Iconify icon="ph:bag-fill" />
+                                </button>
+                            </div>
                         </div>
 
                     </SwiperSlide>
-                    <SwiperSlide className="item">
-                        <div className="item-header">
-                            <Image
-                                src="/images/services/2.png"
-                                width={125}
-                                height={125}
-                                alt="" />
-                        </div>
-                        <div className="item-body">
-                            <h3>
-                                سرویس فالوور اینستاگرام واقعی
-                            </h3>
-                            <ul>
-                                <li>زمان : 10 دقیقه</li>
-                                <li>
-                                    تعداد 2 هزار
-                                </li>
-                                <li>
-                                    قیمت تمام شده : 350 هزار تومان
-                                </li>
-                                <li>
-                                    تکرار : بله
-                                </li>
-                            </ul>
+                    <SwiperSlide >
+                        <div className="item">
+                            <div className="item-header">
+                                <Image
+                                    src="/images/services/2.png"
+                                    width={125}
+                                    height={125}
+                                    alt="" />
+                            </div>
+                            <div className="item-body">
+                                <h3>
+                                    سرویس فالوور اینستاگرام واقعی
+                                </h3>
+                                <ul>
+                                    <li>زمان : 10 دقیقه</li>
+                                    <li>
+                                        تعداد 2 هزار
+                                    </li>
+                                    <li>
+                                        قیمت تمام شده : 350 هزار تومان
+                                    </li>
+                                    <li>
+                                        تکرار : بله
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="item-buttons">
+                                <button>
+                                    <span className="number">
+                                        320 تومان
+                                    </span>
+                                    <Iconify icon="ph:bag-fill" />
+                                </button>
+                            </div>
                         </div>
 
-                        <div className="item-buttons">
-                            <button>
-                                <span className="number">
-                                    320 تومان
-                                </span>
-                                <Iconify icon="ph:bag-fill" />
-                            </button>
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <div className="item">
+                            <div className="item-header">
+                                <Image
+                                    src="/images/services/2.png"
+                                    width={125}
+                                    height={125}
+                                    alt="" />
+                            </div>
+                            <div className="item-body">
+                                <h3>
+                                    سرویس فالوور اینستاگرام واقعی
+                                </h3>
+                                <ul>
+                                    <li>زمان : 10 دقیقه</li>
+                                    <li>
+                                        تعداد 2 هزار
+                                    </li>
+                                    <li>
+                                        قیمت تمام شده : 350 هزار تومان
+                                    </li>
+                                    <li>
+                                        تکرار : بله
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="item-buttons">
+                                <button>
+                                    <span className="number">
+                                        320 تومان
+                                    </span>
+                                    <Iconify icon="ph:bag-fill" />
+                                </button>
+                            </div>
                         </div>
 
                     </SwiperSlide>
