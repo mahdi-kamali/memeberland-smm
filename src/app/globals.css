@@ -730,6 +730,137 @@ h3 {
   width: 100%;
 }
 
+.services-page {
+  background-image: url("/images/services/1.png");
+  background-size: auto;
+  background-repeat: repeat;
+  min-height: 1000dvh;
+}
+.services-page .poster {
+  padding-top: 7em;
+  margin: 0 auto;
+  gap: 3rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.services-page .poster .container {
+  display: flex;
+  max-width: 1300px;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.services-page .poster .container .right {
+  position: relative;
+  display: flex;
+  width: 30rem;
+  height: 30rem;
+}
+.services-page .poster .container .left {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.services-page .poster .container .left h1 {
+  line-break: normal !important;
+  line-height: 1.25;
+}
+.services-page .poster .container .left h1 .highlight {
+  background-color: white;
+  display: inline-block;
+  padding: 0 0.5em;
+  padding-block-end: 0.25em;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  margin-top: 1rem;
+}
+.services-page .poster .container .left h1 .highlight small {
+  background: linear-gradient(180deg, #d602fc 0%, #0d4bf4 99.99%, rgba(0, 0, 0, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services-page .poster .container .left p {
+  margin-top: 1rem;
+  line-height: 2;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+.services-page .top-sales {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.services-page .top-sales h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: rgb(255, 255, 23);
+}
+.services-page .top-sales .body {
+  padding: 2em;
+}
+.services-page .top-sales .body .item {
+  position: relative;
+  background: linear-gradient(180deg, #fb9534 0%, #9c1fff 99.99%, #fff 100%);
+  stroke-width: 6px;
+  stroke: #ffb700;
+  filter: drop-shadow(9px 12px 10px rgba(0, 0, 0, 0.25));
+  padding: 2em;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  margin-top: 3rem;
+}
+.services-page .top-sales .body .item .item-header img {
+  position: absolute;
+  top: -4em;
+  right: 2rem;
+}
+.services-page .top-sales .body .item .item-body {
+  margin-top: 1.5rem;
+}
+.services-page .top-sales .body .item .item-body h3 {
+  font-size: 1.75rem;
+}
+.services-page .top-sales .body .item .item-body ul {
+  padding-right: 1em;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0.75;
+}
+.services-page .top-sales .body .item .item-body ul li {
+  list-style: disc;
+}
+.services-page .top-sales .body .item .item-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.services-page .top-sales .body .item .item-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  font-size: 1.75em;
+  align-items: center;
+  justify-content: center;
+}
+.services-page .top-sales .body .item .item-buttons button svg {
+  background: linear-gradient(180deg, #F75061 0%, #FFB700 100%);
+  border-radius: 50%;
+  font-size: 3.5rem;
+  padding: 0.75rem;
+}
+
 header {
   position: absolute;
   top: 0;

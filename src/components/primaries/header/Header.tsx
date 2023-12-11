@@ -18,7 +18,7 @@ export default function Header() {
           </span>
           <Iconify icon="solar:user-bold" />
         </Link>
-        <Link href={"/"} >
+        <Link href={"/services"} >
           <span>
             سرویس ها
           </span>
