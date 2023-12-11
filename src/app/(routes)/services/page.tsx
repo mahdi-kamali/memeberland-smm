@@ -226,13 +226,7 @@ export default function page() {
 
             <SearchTopSales />
 
-
-           <SearchTableResult/>
-
-
-
-
-
+            <SearchTableResult />
 
         </main>
     )

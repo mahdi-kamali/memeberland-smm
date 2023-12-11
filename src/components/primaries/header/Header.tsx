@@ -12,7 +12,7 @@ export default function Header() {
           </span>
           <Iconify icon="ion:home" />
         </Link>
-        <Link href={"/"} >
+        <Link href={"/auth/login"} >
           <span>
             حساب و پنل کاربری
           </span>
