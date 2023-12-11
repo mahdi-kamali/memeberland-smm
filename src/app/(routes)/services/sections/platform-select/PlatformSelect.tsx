@@ -1,23 +1,17 @@
 "use client"
 
-import Iconify from "@/components/icon/Iconify";
 import Image from "next/image";
-import Select from 'react-select'
 
 
 
-const options = [
-    { value: 'سرویس های لایک', label: 'سرویس های لایک' },
-    { value: 'سرویس های فالووینگ', label: 'سرویس های فالووینگ' },
-    { value: 'سرویس های کامنت', label: 'سرویس های کامنت' }
-]
+
 
 
 export default function PlatformSelect() {
     return (
         <section className="platform-select">
-            <div className="platforms">
 
+            <div className="platforms">
                 <div className="header">
 
                     <h1>
@@ -77,22 +71,6 @@ export default function PlatformSelect() {
                     </p>
 
                 </div>
-
-                <div className="search-box">
-                    <div className="search-input">
-                        <Iconify icon="ion:search" />
-                        <input type="text" placeholder="جستجو" />
-                    </div>
-
-
-                    <div className="filter">
-                        <Select options={options} placeholder="فیلتر کردن" />
-
-                    </div>
-
-                </div>
-
-
             </div>
         </section>
     )

@@ -2,6 +2,9 @@ import Image from "next/image";
 import TopSales from "./sections/top-sales/TopSales";
 import Iconify from "@/components/icon/Iconify";
 import PlatformSelect from "./sections/platform-select/PlatformSelect";
+import SearchBox from "./sections/search-box/SearchBox";
+import SearchTopSales from "./sections/search-top-sales/SearchTopSales";
+import SearchTableResult from "./sections/search-table-result/SearchTableResult";
 
 
 
@@ -218,6 +221,16 @@ export default function page() {
 
 
             <PlatformSelect />
+
+            <SearchBox />
+
+            <SearchTopSales />
+
+
+           <SearchTableResult/>
+
+
+
 
 
 
