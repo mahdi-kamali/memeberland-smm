@@ -36,7 +36,7 @@ export default function Header() {
           </span>
           <Iconify icon="wpf:faq" />
         </Link>
-        <Link href={"/"} >
+        <Link href={"/contact-us"} >
           <span>
             تماس با ما
           </span>
