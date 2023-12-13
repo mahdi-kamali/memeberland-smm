@@ -42,7 +42,7 @@ export default function Header() {
           </span>
           <Iconify icon="fluent:person-support-20-filled" />
         </Link>
-        <Link href={"/"} >
+        <Link href={"/about-us"} >
           <span>
             درباره ما
           </span>

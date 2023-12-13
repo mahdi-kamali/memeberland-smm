@@ -1494,13 +1494,13 @@ h3 {
 }
 
 .faqs-page {
-  min-height: 100dvh;
   display: flex;
   align-items: center;
   padding-top: 9em;
   background-image: url("/images/login/1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 6em;
 }
 .faqs-page .header {
   display: flex;
@@ -1551,6 +1551,65 @@ h3 {
   line-height: 1.75;
   padding-top: 0;
   font-weight: bold;
+}
+
+.about-us-page {
+  display: grid;
+  grid-template-columns: 27rem 35rem;
+  place-content: center;
+  padding-top: 9em;
+  padding-bottom: 6em;
+}
+.about-us-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/about-us/2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: soft-light;
+}
+.about-us-page .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.about-us-page .left p {
+  font-size: 1.5rem;
+  line-height: 2;
+  opacity: 0.75;
+}
+.about-us-page .left .contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  align-items: start;
+  gap: 0.5rem;
+}
+.about-us-page .left .contacts .item {
+  background-color: white;
+  font-weight: bold;
+  border-radius: 100rem;
+}
+.about-us-page .left .contacts .item span {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 0.25rem;
+  padding: 0.33em 0.75em;
+  background: linear-gradient(180deg, #d602fc 0%, #0d4bf4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-us-page .left .contacts .item span svg {
+  width: 2rem;
+  height: 2rem;
+}
+.about-us-page .right {
+  position: relative;
+  scale: 1.4;
 }
 
 .accordion {
