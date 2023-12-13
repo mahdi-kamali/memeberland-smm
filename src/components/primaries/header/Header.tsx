@@ -30,7 +30,7 @@ export default function Header() {
           </span>
           <Iconify icon="fa-solid:blog" />
         </Link>
-        <Link href={"/"} >
+        <Link href={"/faqs"} >
           <span>
             پرسش ها و پاسخ ها
           </span>

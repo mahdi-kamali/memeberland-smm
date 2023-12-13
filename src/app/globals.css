@@ -1493,6 +1493,95 @@ h3 {
   background-repeat: no-repeat;
 }
 
+.faqs-page {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  padding-top: 9em;
+  background-image: url("/images/login/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.faqs-page .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.faqs-page .header p {
+  font-size: 1.25rem;
+  max-width: 55ch;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+.faqs-page .body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  align-items: start;
+}
+.faqs-page .body .item {
+  background-color: white;
+  padding: 1em 2em;
+}
+.faqs-page .body .item h2 {
+  font-size: 1.5rem;
+  background: linear-gradient(0deg, #197bf2 0%, #d602fc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faqs-page .body .item h2 svg {
+  rotate: 180deg;
+  width: 2.5rem;
+  transition: all 1s ease;
+}
+.faqs-page .body .item p {
+  background: linear-gradient(180deg, #197bf2 0%, #d602fc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.75;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+.accordion {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.accordion .accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 1s ease;
+}
+.accordion .accordion-body .content {
+  overflow: hidden;
+}
+
+.accordion-true {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.accordion-true .accordion-header svg {
+  rotate: 0deg !important;
+}
+.accordion-true .accordion-body {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: all 1s ease;
+}
+.accordion-true .accordion-body .content {
+  overflow: hidden;
+}
+
 header {
   position: fixed;
   top: 0;
