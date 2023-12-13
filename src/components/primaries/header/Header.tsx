@@ -24,7 +24,7 @@ export default function Header() {
           </span>
           <Iconify icon="pepicons-pencil:internet-circle-filled" />
         </Link>
-        <Link href={"/"} >
+        <Link href={"/blogs"} >
           <span>
             مقالات
           </span>

@@ -1,11 +1,8 @@
 import Iconify from "@/components/icon/Iconify";
-import Image from "next/image";
 
 export default function page() {
     return (
         <main className="contact-us">
-            <div className="background">
-            </div>
 
             <form action="#">
 
