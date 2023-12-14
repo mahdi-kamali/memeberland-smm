@@ -19,7 +19,7 @@ export default function page() {
     return (
         <main className="login-page">
             <div className="right">
-                <form action="/user/dashboard/add-found"
+                <form action="/user/dashboard/statistics"
                     onSubmit={handleOnSubmit}>
                     <div className="header">
                         <div className="avatar">
