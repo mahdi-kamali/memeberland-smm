@@ -1,11 +1,26 @@
+"use client"
+
 import Iconify from "@/components/icon/Iconify";
 import Image from "next/image";
+import { FormEventHandler } from "react";
+
+
 
 export default function page() {
+
+
+
+
+    const handleOnSubmit = (e : any) => {
+        // e.preventDefault()
+    }
+
+
     return (
         <main className="login-page">
             <div className="right">
-                <form action="#">
+                <form action="/user/dashboard/add-found"
+                    onSubmit={handleOnSubmit}>
                     <div className="header">
                         <div className="avatar">
                             <Image
@@ -15,11 +30,12 @@ export default function page() {
                                 src="/images/login/3.png" />
                         </div>
                         <div className="info">
-                            <button className="item-true">
+                            <button className="item-true"
+                                type="button">
                                 <span>ورود کاربری</span>
                                 <Iconify icon="material-symbols:login" />
                             </button>
-                            <button>
+                            <button type="button">
                                 <span>ثبت نام</span>
                                 <Iconify icon="mdi:register" />
                             </button>

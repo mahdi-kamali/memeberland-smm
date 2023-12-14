@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import SideBar from '@/components/primaries/user-panel/SideBar'
 
 
 
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
+        <SideBar />
         {children}
         <Footer />
       </body>
