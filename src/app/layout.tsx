@@ -9,13 +9,26 @@ import Footer from '@/components/primaries/footer/Footer'
 
 
 
+// User SideBar
+import SideBar from '@/components/primaries/user-panel/SideBar'
+
+
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import SideBar from '@/components/primaries/user-panel/SideBar'
+
+
+// import React Vertical Time-Line Css
+import 'react-vertical-timeline-component/style.min.css';
+
+// react-circular-progressbar Style Css
+import 'react-circular-progressbar/dist/styles.css';
+
+
+
 
 
 

@@ -1643,6 +1643,7 @@ h3 {
   gap: 1rem;
   padding: 2em;
   justify-content: center;
+  margin-top: 1rem;
 }
 .statistics-page .quick-views .item {
   display: flex;
@@ -1692,6 +1693,86 @@ h3 {
 }
 .statistics-page .quick-views .item:nth-child(4) {
   background-color: #5ba7ff;
+}
+.statistics-page .active-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.statistics-page .active-services h2 {
+  text-align: center;
+}
+.statistics-page .active-services .platforms {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.statistics-page .active-services .platforms .item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0 2em;
+  gap: 1rem;
+  padding-right: 0;
+  border-radius: 100rem;
+  transition: all 1s ease;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 2rem;
+}
+.statistics-page .active-services .platforms .item img {
+  scale: 1.4;
+}
+.statistics-page .active-services .platforms .item-true {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.statistics-page .active-services .services {
+  max-width: 1200px;
+  margin-top: 3rem;
+  position: relative;
+  left: -50%;
+  transform: translateX(50%);
+}
+.statistics-page .active-services .services .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 1.5em;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.statistics-page .active-services .services .item .item-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.statistics-page .active-services .services .item .item-body span {
+  margin-top: 0.5rem;
+  background-color: white;
+  color: #4976f3;
+  padding: 0.25em 1em;
+  border-radius: 100rem;
+}
+.statistics-page .events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.statistics-page .events .vertical-timeline-element {
+  direction: ltr;
+}
+.statistics-page .events .vertical-timeline-element * {
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: white !important;
 }
 
 .user-panel-sidebar {
@@ -1782,6 +1863,10 @@ h3 {
 }
 .accordion-true .accordion-body .content {
   overflow: hidden;
+}
+
+.CircularProgressbar-text {
+  font-family: iranSans;
 }
 
 header {

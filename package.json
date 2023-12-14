@@ -11,9 +11,11 @@
   "dependencies": {
     "next": "14.0.3",
     "react": "^18",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.2",
     "react-select": "^5.8.0",
+    "react-vertical-timeline-component": "^3.6.0",
     "swiper": "^11.0.5"
   },
   "devDependencies": {

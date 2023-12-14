@@ -2,7 +2,7 @@
 
 import Iconify from "@/components/icon/Iconify";
 import Image from "next/image";
-import { FormEventHandler } from "react";
+
 
 
 

@@ -1,11 +1,17 @@
 import Iconify from "@/components/icon/Iconify";
 import Image from "next/image";
+import ActiveServices from "./sections/active-services/ActiveServices";
+import Events from "./sections/events/Events";
 
 export default function page() {
+
+
+
+
     return (
         <main className="statistics-page user-panel">
 
-            <div className="quick-views">
+            <section className="quick-views">
                 <div className="item">
                     <div className="left">
                         <Iconify icon="eva:done-all-outline" />
@@ -67,7 +73,13 @@ export default function page() {
 
 
                 </div>
-            </div>
+            </section>
+
+
+            <ActiveServices />
+
+            <Events />
+
 
             <div className="shapes">
                 <div className="shape-1">
