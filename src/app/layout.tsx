@@ -32,7 +32,6 @@ import 'react-circular-progressbar/dist/styles.css';
 
 
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

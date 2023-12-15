@@ -1762,9 +1762,10 @@ h3 {
 .statistics-page .events {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 3rem;
+}
+.statistics-page .events h2 {
+  text-align: center;
 }
 .statistics-page .events .vertical-timeline-element {
   direction: ltr;
@@ -1773,6 +1774,12 @@ h3 {
   visibility: visible !important;
   opacity: 1 !important;
   color: white !important;
+}
+.statistics-page .events .vertical-timeline-element--work:nth-child(odd) .vertical-timeline-element-content {
+  text-align: right;
+}
+.statistics-page .events .vertical-timeline-element--work:nth-child(odd) .vertical-timeline-element-content .vertical-timeline-element-date {
+  text-align: left;
 }
 
 .user-panel-sidebar {

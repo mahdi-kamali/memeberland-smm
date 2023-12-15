@@ -1717,7 +1717,6 @@ h3 {
 }
 
 .statistics-page {
-
     .shapes {
         top: 6em;
         z-index: -1;
@@ -1853,19 +1852,30 @@ h3 {
     .events {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: 3rem;
+        h2 {
+            text-align: center;
+        }
         .vertical-timeline-element {
             direction: ltr;
-             *{
-                 visibility: visible !important;
-                 opacity: 1 !important;
-                 color: white !important;
-             }
-         }
+            * {
+                visibility: visible !important;
+                opacity: 1 !important;
+                color: white !important;
+            }
+        }
+
+        .vertical-timeline-element--work {
+            &:nth-child(odd) {
+                .vertical-timeline-element-content {
+                    text-align: right;
+                    .vertical-timeline-element-date {
+                        text-align: left;
+                    }
+                }
+            }
+        }
     }
- 
 }
 
 .user-panel-sidebar {
@@ -1965,8 +1975,6 @@ h3 {
         }
     }
 }
-
-
 
 // Circular ProgressBar Style
 .CircularProgressbar-text {
