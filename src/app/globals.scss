@@ -711,7 +711,7 @@ h3 {
                     .image {
                         width: 100%;
                         position: relative;
-                        background-color: red;
+                        background-color: $color-2;
                         aspect-ratio: 16/11;
                         border-radius: 2rem;
                         overflow: hidden;
@@ -1503,7 +1503,7 @@ h3 {
             .image {
                 width: 100%;
                 position: relative;
-                background-color: red;
+                background-color: $color-2;
                 aspect-ratio: 16/11;
                 border-radius: 2rem;
                 overflow: hidden;
@@ -1699,11 +1699,209 @@ h3 {
 }
 
 .add-found-page {
-    min-height: 100dvh;
-    padding-top: 6em;
     background-image: url("/images/login/1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    .header {
+        padding: 3em;
+        h1 {
+            span {
+                font-size: 80%;
+                background: linear-gradient(180deg, #ffb700 0%, #fff 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-style: normal;
+                font-weight: 700;
+            }
+        }
+        p {
+            background: linear-gradient(180deg, #ffb700 0%, #fff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.3rem;
+            max-width: 65ch;
+            line-height: 1.75;
+            font-weight: bold;
+        }
+    }
+
+    .body {
+        padding-right: 2em;
+        .road-map {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            counter-reset: section;
+            width: 35rem;
+            .item {
+                display: flex;
+                font-size: 1rem;
+                opacity: 0.4;
+                color: white;
+                padding-bottom: 2em;
+                position: relative;
+                transition: all 1s ease;
+                pointer-events: none;
+                .left {
+                    margin: 0 1.25rem;
+                    display: grid;
+                    grid-template-rows: max-content 1fr;
+                    border-radius: 100rem;
+                    position: relative;
+                    span {
+                        font-size: 1.75rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 3px solid white;
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        background-color: white;
+                        color: $color-1;
+                        z-index: 1;
+                    }
+                    .arrow {
+                        animation: moveDown 4s ease infinite;
+                        font-size: 2.5rem;
+                        display: flex;
+                        justify-content: center;
+                        display: none;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 0;
+                        border-radius: inherit;
+                        transition: 2s ease all;
+                        z-index: 0;
+                    }
+                }
+                .right {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.5rem;
+                    font-size: 1rem;
+                    color: white;
+                    flex-wrap: wrap;
+                    .item-animation {
+                        width: 0;
+                        transition: all 1s ease;
+                        mix-blend-mode: soft-light;
+                        height: 0;
+                        opacity: 0.75;
+                    }
+                    .item-info {
+                        display: flex;
+                        flex-direction: column;
+                        h2 {
+                            font-size: 1.75rem;
+                        }
+                        p {
+                            max-width: 30ch;
+                        }
+                    }
+                    .item-input {
+                        min-width: 50%;
+                        fieldset {
+                            border: 2px solid white;
+                            border-radius: 0.5rem;
+                            cursor: pointer;
+                            transition: all 1s ease;
+                            legend {
+                                font-size: 1.25rem;
+                                margin: 0 2rem;
+                                padding: 0 0.5em;
+                                display: flex;
+                                align-items: center;
+                                gap: 0.25rem;
+                                font-weight: bold;
+                                transition: all 1s ease;
+                                border-radius: 3rem;
+                                padding: 0.25em 0.75em;
+                                background-color: white;
+                                color: $color-2;
+
+                                svg {
+                                    font-size: 2rem;
+                                }
+                            }
+                            .content {
+                                h1 {
+                                    font-size: 1rem;
+                                    padding: 1em;
+                                    padding-top: 0.75em;
+                                    font-weight: normal;
+                                    padding-left: 2.5em;
+                                }
+                            }
+                            &:hover {
+                                background-color: white;
+                                .content {
+                                    color: $color-2;
+                                }
+                            }
+                        }
+                        .pay-button {
+                            display: flex;
+                            align-items: center;
+                            background-color: green;
+                            color: white;
+                            padding: 1em 2em;
+                            gap: 0.25rem;
+                            border-radius: 100rem;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            svg {
+                                font-size: 1.25rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .currnet-step {
+                opacity: 1;
+                pointer-events: all;
+                .left {
+                    .arrow {
+                        animation: moveDown 2s ease infinite;
+                        font-size: 2.5rem;
+                        display: flex;
+                        justify-content: center;
+                        display: flex;
+                    }
+                }
+            }
+            .completed {
+                opacity: 1;
+                border-color: transparent;
+                pointer-events: all;
+                fieldset {
+                    background-color: white;
+                    color: $color-2;
+                }
+                .left {
+                    &::after {
+                        height: 100%;
+                        background-color: gold;
+                    }
+                }
+                .arrow {
+                    display: none !important;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
     .shapes {
         .shape-1 {
             position: absolute;
@@ -2180,7 +2378,7 @@ footer {
                     justify-content: center;
                     padding: 0.25em;
                     border-radius: 100rem;
-                    color: red;
+                    color: $color-2;
                 }
             }
 
@@ -2282,3 +2480,17 @@ footer {
         }
     }
 }
+
+
+
+@keyframes moveDown {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 100%;
+    }
+}
+
