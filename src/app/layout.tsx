@@ -1,8 +1,41 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+
+
+
+// App Style
+import '@/app/styles/globals/globals.css'
+
+// Componetns Styles
+import '@/app/styles/components/accordion/accordion.css'
+import '@/app/styles/components/table/table.css'
+
+// Pages Styles
+import "@/app/styles/pages/home/home.css"
+import "@/app/styles/pages/services/services.css"
+import "@/app/styles/pages/contact-us/contact-us.css"
+import "@/app/styles/pages/blogs/blogs.css"
+import "@/app/styles/pages/faqs/faqs.css"
+import "@/app/styles/pages/about-us/about-us.css"
+import "@/app/styles/pages/auth/auth.css"
+
+
+
+
+// Dashboard Styles
+
+
+
+
+
+
+
+
+
+
+
+// Priamry Components
 import Header from '@/components/primaries/header/Header'
 import Footer from '@/components/primaries/footer/Footer'
+import type { Metadata } from 'next'
 
 
 
@@ -32,7 +65,6 @@ import 'react-circular-progressbar/dist/styles.css';
 
 
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'ممبرلند',
@@ -46,7 +78,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body >
         <Header />
         <SideBar />
         {children}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { useRouter } from "next/router"
 // import { useNavigate } from "react-router-dom"
 
 
@@ -15,7 +16,6 @@ export function useFetch(defaultUrl, deafultValue) {
     const [error, setError] = useState(undefined)
     const [loading, setLoading] = useState(true)
     const [refresh, setRefresh] = useState(false)
-    const navigator = useNavigate()
     const token = JSON.parse(sessionStorage.getItem("token"))
 
     function refreshData() {
@@ -36,8 +36,8 @@ export function useFetch(defaultUrl, deafultValue) {
                     setData(response.data)
                 } catch (err) {
                     if (err?.response?.status === 403) {
-                        sessionStorage.removeItem("token")
-                        navigator("/auth")
+                        // sessionStorage.removeItem("token")
+                        
                     }
                     setError(err)
                 } finally {

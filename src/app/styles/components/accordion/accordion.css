@@ -1,0 +1,28 @@
+.accordion {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.accordion .accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 1s ease;
+}
+.accordion .accordion-body .content {
+  overflow: hidden;
+}
+
+.accordion-true {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.accordion-true .accordion-header svg {
+  rotate: 0deg !important;
+}
+.accordion-true .accordion-body {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: all 1s ease;
+}
+.accordion-true .accordion-body .content {
+  overflow: hidden;
+}/*# sourceMappingURL=accordion.css.map */

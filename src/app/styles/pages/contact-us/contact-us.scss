@@ -1,0 +1,131 @@
+$color-1: #4976f3;
+$color-2: #9c1fff;
+$color-3: #3165f3;
+$color-4: #4976f3;
+$color-5: #698df3;
+$panel-color-1: #d7e1ff;
+$panel-color-2: #92c4ff;
+$panel-color-3: #0fac6d;
+$panel-color-4: #ffa938;
+$panel-color-5: #17a2b8;
+$panel-color-6: #dc3545;
+
+$headers-size-h1: 3rem;
+$headers-size-h2: 2.5rem;
+$headers-size-h3: 1.5rem;
+
+
+.contact-us {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 3em;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        .form-header {
+            z-index: 1;
+            max-width: 60ch;
+            span {
+                background-color: white;
+                display: inline-block;
+                margin: 0 1rem;
+                margin-right: 0;
+                margin-top: 0.5rem;
+                padding: 0 0.5em;
+                border-radius: 0.5rem;
+                small {
+                    background: linear-gradient(180deg, #d602fc 0%, #0d4bf4 99.99%, rgba(0, 0, 0, 0) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            p {
+                margin-top: 0.5rem;
+                line-height: 1.75;
+            }
+        }
+        .form-body {
+            display: grid;
+            grid-template-columns: 15rem 15rem;
+            align-items: center;
+            margin-top: 1rem;
+            gap: 1rem;
+            .form-group {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                color: white;
+                border: 2px solid white;
+                border-radius: 0.5rem;
+                padding: 0.5em 1em;
+                gap: 0.25rem;
+                font-size: 1.1rem;
+                input {
+                    all: unset;
+                    width: 100%;
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+                svg {
+                    font-size: 1.5rem;
+                }
+            }
+            .message {
+                grid-column: -1/1;
+                align-items: start;
+                textarea {
+                    width: 100%;
+                    background-color: transparent;
+                    border: none !important;
+                    box-shadow: none !important;
+                    outline: none !important;
+                    color: white;
+                    font-size: 1rem;
+                    font-family: inherit !important;
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .form-buttons {
+            display: flex;
+            margin-top: 2rem;
+            button {
+                background-color: white;
+                font-weight: bold;
+                padding: 0.25em 2em;
+                font-size: 1.25rem;
+                border-radius: 0.5rem;
+                span {
+                    background: linear-gradient(180deg, #d602fc 0%, #197bf2 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("/images/contact-us/1.png");
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        mix-blend-mode: soft-light;
+        z-index: -1;
+    }
+}
