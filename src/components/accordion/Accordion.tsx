@@ -1,34 +1,33 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import React, { Children, ReactElement, ReactNode, useState } from "react"
 
-
-interface props {
-    children: any,
-    className: String,
-    defaultActive: Boolean
+interface AccordionProps {
+    className?: string;
+    defaultActive: boolean;
+    children: ReactNode;
 }
 
 
-export default function Accordion(
-    props: props
-) {
-
-    const [state, setState] = useState(props.defaultActive)
-
-
-
-    const changed = props.children?.map((item: any) => {
-        item.props.state = state;
-        item.props.setState = setState;
-        return item
-    })
-
+const Accordion: React.FC<AccordionProps> = ({
+    className,
+    defaultActive,
+    children,
+}) => {
+    const [state, setState] = useState<boolean>(defaultActive);
 
 
     return (
-        <div className={`accordion accordion-${state} ${props.className}`}>
-            {changed}
+        <div className={`${className} accordion accordion-${state}`}>
+            {React.Children.map(children, (child: any, index) => {
+                return React.cloneElement(child, {
+                    state,
+                    setState,
+                    key: index,
+                });
+            })}
         </div>
-    )
-}
+    );
+};
+
+export default Accordion;

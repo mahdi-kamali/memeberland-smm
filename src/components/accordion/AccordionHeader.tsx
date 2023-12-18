@@ -1,25 +1,23 @@
 "use client"
 
 
-interface props {
-    children?: any | undefined,
-    state?: any,
-    setState?: any
-}
 
 
 
 
 
 
-export default function AccordionHeader(props: props) {
+export default function AccordionHeader(props: any) {
+
+
 
 
 
     const onToggleClick = () => {
-        console.log("clicked")
         props.setState(!props.state)
     }
+
+
 
 
 

@@ -2163,7 +2163,7 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   padding-right: 20em;
   padding-top: 10em;
   padding-bottom: 2em;
@@ -2330,6 +2330,338 @@ h3 {
   z-index: 0;
   opacity: 0.05;
   position: absolute;
+}
+
+.orders-history {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-right: 20em;
+  padding-top: 10em;
+  padding-bottom: 2em;
+}
+.orders-history::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 30em;
+  transform: translateY(-50%);
+  background-image: url("/images/user/dashboard/18.png");
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: soft-light;
+  opacity: 0.3;
+  overflow: hidden;
+  z-index: -1;
+}
+.orders-history .intro {
+  display: grid;
+  grid-template-columns: max-content 30rem;
+  gap: 1rem;
+  align-items: center;
+}
+.orders-history .intro h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.orders-history .intro h1 span {
+  margin-right: 0.5rem;
+}
+.orders-history .intro .right {
+  line-height: 1.5;
+  color: white;
+}
+.orders-history .intro .right h1 {
+  line-height: 1.5;
+  font-size: 2.25rem;
+}
+.orders-history .intro .right h1 span {
+  background-color: white;
+  color: #4976f3;
+  padding: 0 0.2em;
+  border-radius: 0.25rem;
+}
+.orders-history .intro .right p {
+  line-height: 1.5;
+}
+.orders-history .orders {
+  align-self: stretch;
+  margin-right: -1rem;
+  margin-top: 1rem;
+}
+.orders-history .orders .body .item {
+  position: relative;
+  background: linear-gradient(180deg, #fb9534 0%, #9c1fff 99.99%, #fff 100%);
+  stroke-width: 6px;
+  stroke: #ffb700;
+  filter: drop-shadow(9px 12px 10px rgba(0, 0, 0, 0.25));
+  padding: 2em;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  margin-top: 3rem;
+  margin-right: 1rem;
+}
+.orders-history .orders .body .item .item-header img {
+  position: absolute;
+  top: -4em;
+  right: 2rem;
+}
+.orders-history .orders .body .item .item-body {
+  margin-top: 1.5rem;
+}
+.orders-history .orders .body .item .item-body h3 {
+  font-size: 1.75rem;
+}
+.orders-history .orders .body .item .item-body ul {
+  padding-right: 1em;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0.75;
+}
+.orders-history .orders .body .item .item-body ul li {
+  list-style: disc;
+}
+.orders-history .orders .body .item .item-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.orders-history .orders .body .item .item-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  font-size: 1.75em;
+  align-items: center;
+  justify-content: center;
+}
+.orders-history .orders .body .item .item-buttons button svg {
+  background: linear-gradient(180deg, #f75061 0%, #ffb700 100%);
+  border-radius: 50%;
+  font-size: 3.5rem;
+  padding: 0.75rem;
+}
+
+.tickets-page {
+  display: flex;
+  justify-content: start;
+  gap: 3rem;
+  padding-top: 8em !important;
+  padding-right: 19em !important;
+  align-items: start;
+  flex-direction: row !important;
+}
+.tickets-page .left {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2em;
+  border-radius: 2rem;
+  box-shadow: 0.3rem 0.3rem 2rem 0.1rem rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.tickets-page .left .state {
+  display: flex;
+  gap: 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  align-self: center;
+}
+.tickets-page .left .state button {
+  display: flex;
+  align-items: center;
+  padding: 0.6em 1em;
+  border-radius: 100rem;
+  font-size: 1rem;
+  gap: 0.5rem;
+  transition: all 1s ease;
+  border: 2px solid white;
+}
+.tickets-page .left .state button:hover {
+  background-color: white;
+  color: #4976f3;
+}
+.tickets-page .left .state .true {
+  color: #4976f3;
+  background-color: white;
+}
+.tickets-page .left .add-new-teicket {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 30rem;
+}
+.tickets-page .left .add-new-teicket .submit-button {
+  cursor: pointer;
+  background-color: #0fac6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  border-radius: 100rem;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.tickets-page .left .ticket-history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  max-height: 80dvh;
+  overflow: auto;
+}
+.tickets-page .left .ticket-history::-webkit-scrollbar {
+  width: 7px; /* width of the entire scrollbar */
+}
+.tickets-page .left .ticket-history::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+.tickets-page .left .ticket-history::-webkit-scrollbar-thumb {
+  background-color: white; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid transparent; /* creates padding around scroll thumb */
+}
+.tickets-page .left .ticket-history .item {
+  width: 12rem;
+  padding: 1em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.tickets-page .left .ticket-history .item .item-header {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.tickets-page .left .ticket-history .item .item-body {
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tickets-page .left .ticket-history .item .item-body .row {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.tickets-page .left .ticket-history .item .item-body .row svg {
+  font-size: 1.25rem;
+}
+.tickets-page .left .ticket-history .item .item-body .row span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+  padding: 0.25em 1em;
+  gap: 0.25rem;
+}
+.tickets-page .left .ticket-history .item .item-buttons {
+  margin-top: 1rem;
+}
+.tickets-page .left .ticket-history .item .item-buttons button {
+  background-color: white;
+  padding: 0.5em 2em;
+  border-radius: 100rem;
+  color: black;
+  cursor: pointer;
+}
+.tickets-page .left .ticket-history .Solved {
+  background-color: red;
+}
+.tickets-page .left .ticket-history .Error {
+  background-color: green;
+}
+.tickets-page .left .ticket-history .Submited {
+  background-color: yellow;
+}
+.tickets-page .left .ticket-history .InProgress {
+  background-color: orange;
+}
+.tickets-page .right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.tickets-page .right .frequently-questions h1 {
+  font-size: 2rem;
+}
+.tickets-page .right .accordions {
+  max-width: 80ch;
+}
+.tickets-page .right .accordions h1 {
+  font-size: 1.5rem;
+}
+.tickets-page .right .accordions p {
+  font-size: 0.9rem;
+  line-height: 2;
+  opacity: 0.75;
+}
+.tickets-page .right .accordions .item {
+  cursor: pointer;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 1em;
+  transition: all 1s ease;
+}
+.tickets-page .right .accordions .accordion-true {
+  background-color: white;
+  padding: 2em;
+}
+.tickets-page .right .accordions .accordion-true * {
+  color: #4976f3;
+}
+.tickets-page .add-new-ticket-field fieldset {
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+.tickets-page .add-new-ticket-field fieldset legend {
+  display: flex;
+  align-items: center;
+  border-radius: 100rem;
+  font-size: 1.25rem;
+  padding: 0.5em 1em;
+  margin: 0 1.5rem;
+  gap: 0.5rem;
+  text-transform: uppercase;
+}
+.tickets-page .add-new-ticket-field fieldset .content {
+  padding: 0.75em 1em;
+  padding-top: 0;
+}
+.tickets-page .add-new-ticket-field fieldset .content input {
+  all: unset;
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 0 0.5em;
+}
+.tickets-page .add-new-ticket-field fieldset .content textarea {
+  max-width: 100%;
+  outline: none !important;
+  font-family: inherit;
+  font-size: 1.5rem;
+  background-color: unset;
+  border: none;
+  color: white;
+  resize: none;
+  width: 100%;
 }
 
 .user-panel-sidebar {
