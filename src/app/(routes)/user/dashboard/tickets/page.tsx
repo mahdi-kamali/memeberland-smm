@@ -8,7 +8,7 @@ import Accordion from "@/components/accordion/Accordion";
 import AccordionHeader from "@/components/accordion/AccordionHeader";
 import AcccordionBody from "@/components/accordion/AcccordionBody";
 
-export default function page() {
+export default function Page() {
 
 
 

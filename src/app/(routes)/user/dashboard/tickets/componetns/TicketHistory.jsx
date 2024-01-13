@@ -35,7 +35,9 @@ const TicketHistory = () => {
         <div className="ticket-history">
 
             {tickets.map((record => {
-                return <div className={`item ${record.status}`}>
+                return <div
+                key={Math.random()} 
+                className={`item ${record.status}`}>
                     <div className="item-header">
                         <div className="status">
                             {getIcon(record.status)}

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Swal from "react-sweetalert2"
 
-export default function page() {
+export default function Page() {
 
 
     const [selectedMethod, setSelectedMethod] = useState({
