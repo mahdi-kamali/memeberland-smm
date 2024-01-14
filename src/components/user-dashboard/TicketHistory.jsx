@@ -1,3 +1,4 @@
+"use client"
 import { Icon } from "@iconify/react"
 import { API } from "@/libs/envAccess";
 import { useFetch } from "@/libs/useFetch";

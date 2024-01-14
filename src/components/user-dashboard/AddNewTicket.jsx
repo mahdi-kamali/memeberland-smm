@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react"
 import FiledSet from "./FiledSet"
 import { Icon } from "@iconify/react"
