@@ -1,15 +1,14 @@
 "use client"
 import { Icon } from "@iconify/react"
-import { API } from "@/libs/envAccess";
-import { useFetch } from "@/libs/useFetch";
+import { useState } from "react";
 
 const TicketHistory = () => {
 
 
-    const [tickets, error, loading] =
-        useFetch(API.DASHBOARD.USER_TICKET_HISTORY.GET)
+    // const [tickets, error, loading] =
+    //     useFetch(API.DASHBOARD.USER_TICKET_HISTORY.GET)
 
-
+    const [tickets, error, loading] = useState([])
 
     const getIcon = (status) => {
         switch (status) {
@@ -37,8 +36,8 @@ const TicketHistory = () => {
 
             {tickets.map((record => {
                 return <div
-                key={Math.random()} 
-                className={`item ${record.status}`}>
+                    key={Math.random()}
+                    className={`item ${record.status}`}>
                     <div className="item-header">
                         <div className="status">
                             {getIcon(record.status)}
